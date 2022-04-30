@@ -1,3 +1,10 @@
 .page-header{
     margin-right: 800px;
 }
+img{
+    width: 200px;
+    height: 200px;
+}
+.wrapper{
+    width: 100%;
+}
