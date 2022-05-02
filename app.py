@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from newsapi import NewsApiClient
+import datetime
 
 app= Flask(__name__)
 @app.route('/')
@@ -33,9 +34,10 @@ def home():
     content.append(main_article["content"])
   #merge them in a zip
   contents = zip(news,author,desc,img,p_date,url,content)
-  print(img, url)
   #pass it in rendered file
   return render_template('home.html', contents=contents)
-
+x = datetime.datetime.now()
+time = x.strftime("%I:%M:%p")
+print(time)
 if __name__ == '__main__':
   app.run(debug=True)
