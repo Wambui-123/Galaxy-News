@@ -1,5 +1,5 @@
 import unittest
-from models import headlines
+from . import headlines
 
 Headlines = headlines.Headlines
 Sources = headlines.Sources

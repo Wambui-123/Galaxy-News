@@ -2,9 +2,10 @@
     box-sizing: border-box;
 }
 .page-header{
-    margin-right: 300px;  
+    margin-right: 400px;  
     font-family: 'Oswald', sans-serif;
     font-style: oblique;
+    color: white;
 }
 .head{
     font-family: 'Orelega One';
@@ -17,10 +18,12 @@ img{
 .wrapper{
     border-radius: 20px;
     margin: 10px;
+    height: 300px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
     padding: 0.5px;
     flex-flow: column wrap;
     border-bottom: 1px white;
+    background-color: rgba(133, 163, 230, 0.908);
 }
 .title{
     font-size: 16px;
@@ -36,17 +39,23 @@ img{
     width: 700px;
     position: relative;
     bottom: 160px;
-    left: 300px;
-    
+    left: 350px; 
 }
-content p {
+.content p {
     word-break: break-all;
     overflow: hidden;
+    color: rgba(198, 34, 34, 0.913);
 }
 .p_date{
     text-align: right;
     font-size: 15px;
+    position: relative;
+    bottom: 110px;
 }
 .active{
     color: red;
+    font-size: 18px;
+}
+.nav{
+    background-image: url(https://images.theconversation.com/files/394/original/See_Explanation._Clicking_on_the_picture_will_download_the_highest_resolution_version_available.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop);
 }
