@@ -30,8 +30,9 @@ def home():
     author.append(main_article["author"])
     desc.append(main_article["description"])
     img.append(main_article["urlToImage"])
-    date = p_date.append(main_article["publishedAt"])
-    date.append(main_article["url"])
+    date = main_article["publishedAt"]
+    new_format = datetime.datetime.strptime(date, "%Y-%m-%d %H:%M:%S.%fZ")
+    p_date.append(new_format)
     url.append(main_article["url"])
     content.append(main_article["content"])
     
