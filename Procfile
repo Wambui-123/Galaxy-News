@@ -1,1 +1,1 @@
-web:  python app.py runserver
+worker:  python app.py runserver
