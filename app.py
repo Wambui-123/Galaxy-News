@@ -7,10 +7,8 @@ app= Flask(__name__)
 @app.route('/')
   
 def home():
-    
   # enter api key and client key for authorization
   newsapi= NewsApiClient(api_key="e9ac9316fc2c41eeab50e67e45e97a4b")
-  
     # top highlights
   top_headlines = newsapi.get_top_headlines(sources="bbc-news")
     # all articles
@@ -29,10 +27,8 @@ def home():
   url = []
   content = []
   #fetch content from all articles using for loop
-  
   for i in range(len(t_articles)):
     main_article = t_articles[i]
-    
     # Append contents to list 
     news.append(main_article["title"])
     author.append(main_article["author"])
@@ -42,7 +38,6 @@ def home():
     url.append(main_article["url"])
     content.append(main_article["content"])
     
-
   # Create list for all articles
   news_all = []
   author_all = []
@@ -68,6 +63,9 @@ def home():
   all = zip(news_all,author_all,desc_all,img_all,p_date_all,url_all,content_all)
   return render_template('home.html', contents=contents, all=all) 
   
+  
+if __name__ == '__main__':
+  app.run(debug=True)  
 #     nav.Bar('top', [
 #     nav.Item('home', 'news'),
 #     ])
@@ -86,5 +84,4 @@ def home():
 # time = x.strftime("%I:%M:%p")
 # print(time)
 
-if __name__ == '__main__':
-  app.run(debug=True)
+
