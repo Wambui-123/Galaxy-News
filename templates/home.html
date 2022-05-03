@@ -36,9 +36,22 @@
                 <div class="item"><a href={{url}}><img src={{img}}></a></div>
                 <div class= "desc"><p>{{desc}}</p></div>
                 <div class= "content"><a href={{url}}><p>{{content}}</p></a></div>
-                <div class= "p_date"><p> Publish Date : {{p_date}}</p></div>
+                <div class= "p_date"><p> Publish Date :{{p_date}}</p></div>
               </div>
               {% endfor %}
+
+              <h2 class = "head">Today's Top News<h2>
+                {%for title_all,author_all,desc_all,img_all,p_date_all,url_all,content_all in all %}
+                  <div class="wrapper">
+                    <div class= "author_all"><p>{{author}}</p></div>
+                    <div class= "title_all"><p>{{title}}</p></div>
+                    <div class="item_all"><a href={{url}}><img src={{img}}></a></div>
+                    <div class= "desc_all"><p>{{desc}}</p></div>
+                    <div class= "content_all"><a href={{url}}><p>{{content}}</p></a></div>
+                    <div class= "p_date_all"><p> Publish Date : {{p_date}}</p></div>
+                  </div>
+                  {% endfor %}
+ 
       </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
