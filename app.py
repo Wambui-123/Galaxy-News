@@ -1,6 +1,5 @@
 from flask import Flask, render_template
 from newsapi import NewsApiClient
-from flask_navigation import Navigation
 import datetime
 
 app= Flask(__name__)
