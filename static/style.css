@@ -41,10 +41,8 @@ img{
     
 }
 content p {
-    word-break: break-all
-}
-a{
-    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
 }
 .p_date{
     text-align: right;

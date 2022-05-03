@@ -30,7 +30,8 @@ def home():
     author.append(main_article["author"])
     desc.append(main_article["description"])
     img.append(main_article["urlToImage"])
-    p_date.append(main_article["publishedAt"])
+    date = p_date.append(main_article["publishedAt"])
+    date.append(main_article["url"])
     url.append(main_article["url"])
     content.append(main_article["content"])
     
