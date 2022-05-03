@@ -17,7 +17,6 @@ def home():
   t_articles = top_headlines['articles']
   #Fetch all articles  
   a_articles = all_articles['articles']
-
   #Things I want stored
   news = []
   author = []
@@ -58,7 +57,8 @@ def home():
   p_date_all.append(a_article["publishedAt"])
   url_all.append(a_article["url"])
   content_all.append(a_article["content"])     
-  
+ 
+  # Merge  
   contents = zip(news,author,desc,img,p_date,url,content)
   all = zip(news_all,author_all,desc_all,img_all,p_date_all,url_all,content_all)
   return render_template('home.html', contents=contents, all=all) 
@@ -66,22 +66,3 @@ def home():
   
 if __name__ == '__main__':
   app.run(debug=True)  
-#     nav.Bar('top', [
-#     nav.Item('home', 'news'),
-#     ])
-  
-  # newsapi= NewsApiClient(api_key="e9ac9316fc2c41eeab50e67e45e97a4b")
-  # all_articles = newsapi.get_everything(sources="bbc-news")
-  # a_articles = all_articles['articles']
-
-
-
-
-    
-  #merge them in a zip
-  #pass it in rendered file
-# x = datetime.datetime.now()
-# time = x.strftime("%I:%M:%p")
-# print(time)
-
-
