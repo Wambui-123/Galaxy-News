@@ -5,10 +5,6 @@ Yvonne Muthui
 # Description
 A flask application that has updated news for anyone to view and read at any given time. It has been created by the use of <a href="doc:introduction" target="_blank">Introduction</a>
 
-# Link to live site
-
-
-
 
 ## User Story ( BDD ) 
 The user would like to.... :
