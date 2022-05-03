@@ -38,8 +38,12 @@ img{
     position: relative;
     bottom: 160px;
     left: 300px;
+    
 }
-.content a{
+content p {
+    word-break: break-all
+}
+a{
     word-wrap: break-word;
 }
 .p_date{
