@@ -1,6 +1,5 @@
 from flask import Flask, render_template
 from newsapi import NewsApiClient
-import datetime
 
 app= Flask(__name__)
 @app.route('/')
@@ -30,9 +29,7 @@ def home():
     author.append(main_article["author"])
     desc.append(main_article["description"])
     img.append(main_article["urlToImage"])
-    date = main_article["publishedAt"]
-    new_format = datetime.datetime.strptime(date, "%Y-%m-%d %H:%M:%S.%fZ")
-    p_date.append(new_format)
+    p_date.append(main_article["publishedAt"])
     url.append(main_article["url"])
     content.append(main_article["content"])
     

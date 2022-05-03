@@ -1,1 +1,1 @@
-worker:  python app.py runserver
+web: gunicorn <app-name>:<app-name>
