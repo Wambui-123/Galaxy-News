@@ -74,7 +74,7 @@ If you have any question or contributions, please email me at [paulettenereah3@g
 
 
 
-Portfolio- [Paullete](https://github.com/Wambui-123)
+Portfolio- [Yvonne](https://github.com/Wambui-123)
 # Licence
 
 Click to  [MIT License](Licence) view
